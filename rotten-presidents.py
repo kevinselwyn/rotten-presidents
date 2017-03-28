@@ -48,9 +48,9 @@ def main():
     """Main function"""
 
     approval_rating = get_approval_rating()
-    movie_title, movie_rating = get_movie_rating(approval_rating)
+    movie_title, movie_rating = get_movie_rating(approval_rating + 1)
 
-    print 'President Trump\'s approval rating: %d%%' % (approval_rating + 1)
+    print 'President Trump\'s approval rating: %d%%' % (approval_rating)
     print '"%s" Rotten Tomatoes rating: %d%%' % (movie_title, movie_rating)
 
 if __name__ == '__main__':
